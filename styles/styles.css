@@ -28,6 +28,7 @@ body {
 .flex-container {
   display: flex;
   background-color: #8775ec;
+  flex-wrap: wrap;
 }
 
 .justify-evenly {
@@ -38,10 +39,6 @@ body {
   background-color: #7dde62;
   height: 50px;
   flex: 1;
-}
-
-.grow-1 {
-  flex-grow: 1;
 }
 
 .grow-2 {
