@@ -21,7 +21,7 @@
         The space between the columns, and between the columns and the outer
         box, is 10px.
       </p>
-      <div class="flex-container justify-content padding-10">
+      <div class="flex-container justify-evenly wrap spacing-10">
         <div class="flex-item"></div>
         <div class="flex-item"></div>
       </div>
@@ -33,7 +33,7 @@
         The space between the columns, and between the columns and the outer
         box, is 15px.
       </p>
-      <div class="flex-container padding-15">
+      <div class="flex-container justify-evenly wrap spacing-15">
         <div class="flex-item"></div>
         <div class="flex-item"></div>
         <div class="flex-item"></div>
@@ -41,41 +41,34 @@
     </section>
 
     <section>
-      <h3>Three unequal columns</h3>
+      <h3>Three unequal sized columns</h3>
       <p>
         The first column is exactly double the width of the other two.<br />
         The space between columns, and between the columns and the outer box, is
         12px.<br />
         Each inner box has a 2px border.
       </p>
-      <div class="flex-container padding=12">
-        <div class="flex-item flex-2 border-2px"></div>
+      <div class="flex-container justify-evenly wrap spacing-12">
+        <div class="flex-item border-2px grow-2"></div>
         <div class="flex-item border-2px"></div>
         <div class="flex-item border-2px"></div>
       </div>
     </section>
 
-    <section>
+    <footer>
       <h3>Four equally sized columns and a footer</h3>
       <p>
         The space between columns, and between the columns and the outer box, is
         12px.<br />
         Each inner box has a 2px border.
       </p>
-      <div class="flex-container flex-column padding-12">
-        <div class="flex-row">
-          <div class="flex-item border-2px"></div>
-          <div class="flex-item border-2px"></div>
-          <div class="flex-item border-2px"></div>
-          <div class="flex-item border-2px"></div>
-        </div>
-        <div class="flex-item footer-item border-2px"></div>
+      <div class="flex-container justify-evenly spacing-12">
+        <div class="flex-item border-2px"></div>
+        <div class="flex-item border-2px"></div>
+        <div class="flex-item border-2px"></div>
+        <div class="flex-item border-2px"></div>
+        <div class="flex-item border-2px wrap"></div>
       </div>
-    </section>
-
-    <footer>
-      <div class="flex-container flex-column"></div>
-      <div class="flex-row flex"></div>
     </footer>
   </body>
 </html>
