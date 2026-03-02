@@ -1,45 +1,81 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Lab</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
     <header>
-        <h2>Flexbox Lab</h2>
-        <p>
-            All boxes have a height of 50px.<br>
-            You may selsect any colour you like for the boxes and their borders.<br>
-        </p>
+      <h2>Flexbox Lab</h2>
+      <p>
+        All boxes have a height of 50px.<br />
+        You may select any colour you like for the boxes and their borders.
+      </p>
     </header>
 
     <section>
-        <h3>Two equaly sized columns</h3>
-        <p>The spaces between the columns, and between the columns and the out box, is 10px.</p>
+      <h3>Two equally sized columns</h3>
+      <p>
+        The space between the columns, and between the columns and the outer
+        box, is 10px.
+      </p>
+      <div class="flex-container justify-content padding-10">
+        <div class="flex-item"></div>
+        <div class="flex-item"></div>
+      </div>
     </section>
 
     <section>
-        <h3>Three equaly sized columns</h3>
-        <p>The spaces between the columns, and between the columns and the ourder box is 15px.</p>
+      <h3>Three equally sized columns</h3>
+      <p>
+        The space between the columns, and between the columns and the outer
+        box, is 15px.
+      </p>
+      <div class="flex-container padding-15">
+        <div class="flex-item"></div>
+        <div class="flex-item"></div>
+        <div class="flex-item"></div>
+      </div>
     </section>
 
     <section>
-        <h3>Three unequal columns</h3>
-        <p>
-            The first column is exactly double the width of the other two.<br>
-            The spaces between columns, and between the columns and the outer box, is 12px.<br/>
-            Each inner box has a 2px border.
-        </p>
+      <h3>Three unequal columns</h3>
+      <p>
+        The first column is exactly double the width of the other two.<br />
+        The space between columns, and between the columns and the outer box, is
+        12px.<br />
+        Each inner box has a 2px border.
+      </p>
+      <div class="flex-container padding=12">
+        <div class="flex-item flex-2 border-2px"></div>
+        <div class="flex-item border-2px"></div>
+        <div class="flex-item border-2px"></div>
+      </div>
     </section>
 
     <section>
-        <h3>Four equally sized columns and a footer</h3>
-        <p>
-            The spaces between columns, and between the columns and the outer box, is 12px.<br>
-            Each inner box has a 2px border.<br>
-        </p>
+      <h3>Four equally sized columns and a footer</h3>
+      <p>
+        The space between columns, and between the columns and the outer box, is
+        12px.<br />
+        Each inner box has a 2px border.
+      </p>
+      <div class="flex-container flex-column padding-12">
+        <div class="flex-row">
+          <div class="flex-item border-2px"></div>
+          <div class="flex-item border-2px"></div>
+          <div class="flex-item border-2px"></div>
+          <div class="flex-item border-2px"></div>
+        </div>
+        <div class="flex-item footer-item border-2px"></div>
+      </div>
     </section>
 
-</body>
+    <footer>
+      <div class="flex-container flex-column"></div>
+      <div class="flex-row flex"></div>
+    </footer>
+  </body>
 </html>
